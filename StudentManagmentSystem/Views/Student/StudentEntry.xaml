@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentManagmentSystem.Views.Student.StudentEntry">
+    <ContentPage.Content>
+        <StackLayout Padding="15" VerticalOptions="CenterAndExpand">
+            <Label Text="Ajouter un nouveau étudiant"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                  FontSize="Large"/>
+            
+            <Entry x:Name="TxtName"
+                   Placeholder="Entrer le nom de l'étudiant"/>
+            <Entry x:Name="TxtEmail"
+                   Placeholder="Entrer l'adresse e-mail de l'étudiant"
+                  />
+            <Button Text="Enregistrer"
+                    x:Name="ButtonSave"
+                    CornerRadius="15"
+                    Clicked="ButtonSave_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentManagmentSystem.Views.RegisterUser">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Inscrivez-vous"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry Placeholder="Nom"
+                   x:Name="TxtName"></Entry>
+            <Entry Placeholder="Email" 
+                   x:Name="TxtEmail"></Entry>
+            <Entry Placeholder="Mot de passe"
+                   IsPassword="True"
+                   x:Name="TxtPassword"></Entry>
+            <Entry IsPassword="True" Placeholder="Vérifier votre mot de passe"
+                   x:Name="TxtConfirmPass"></Entry>
+            <Button Text="Register" x:Name="ButtonRegister"
+                    Clicked="ButtonRegister_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
